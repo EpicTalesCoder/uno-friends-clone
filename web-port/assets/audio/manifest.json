@@ -1,0 +1,136 @@
+{
+  "bgm": {
+    "0": {
+      "file": "bgm_00.json",
+      "duration": 2.135,
+      "notes": 93
+    },
+    "1": {
+      "file": "bgm_01.json",
+      "duration": 4.615,
+      "notes": 205
+    },
+    "2": {
+      "file": "bgm_02.json",
+      "duration": 4.918,
+      "notes": 250
+    },
+    "3": {
+      "file": "bgm_03.json",
+      "duration": 8.028,
+      "notes": 271
+    },
+    "4": {
+      "file": "bgm_04.json",
+      "duration": 54.803,
+      "notes": 1402
+    },
+    "5": {
+      "file": "bgm_05.json",
+      "duration": 2.894,
+      "notes": 140
+    }
+  },
+  "sfx": {
+    "6": {
+      "file": "sfx_06.wav",
+      "bytes": 8772
+    },
+    "7": {
+      "file": "sfx_07.wav",
+      "bytes": 6976
+    },
+    "8": {
+      "file": "sfx_08.wav",
+      "bytes": 7182
+    },
+    "9": {
+      "file": "sfx_09.wav",
+      "bytes": 9710
+    },
+    "10": {
+      "file": "sfx_10.wav",
+      "bytes": 3336
+    },
+    "11": {
+      "file": "sfx_11.wav",
+      "bytes": 1352
+    },
+    "12": {
+      "file": "sfx_12.wav",
+      "bytes": 1566
+    },
+    "13": {
+      "file": "sfx_13.wav",
+      "bytes": 1730
+    },
+    "14": {
+      "file": "sfx_14.wav",
+      "bytes": 956
+    },
+    "15": {
+      "file": "sfx_15.wav",
+      "bytes": 3028
+    },
+    "16": {
+      "file": "sfx_16.wav",
+      "bytes": 3326
+    },
+    "17": {
+      "file": "sfx_17.wav",
+      "bytes": 3722
+    },
+    "18": {
+      "file": "sfx_18.wav",
+      "bytes": 1748
+    },
+    "19": {
+      "file": "sfx_19.wav",
+      "bytes": 3742
+    },
+    "20": {
+      "file": "sfx_20.wav",
+      "bytes": 1044
+    },
+    "21": {
+      "file": "sfx_21.wav",
+      "bytes": 6044
+    },
+    "22": {
+      "file": "sfx_22.wav",
+      "bytes": 6680
+    },
+    "23": {
+      "file": "sfx_23.wav",
+      "bytes": 2816
+    },
+    "24": {
+      "file": "sfx_24.wav",
+      "bytes": 4250
+    },
+    "25": {
+      "file": "sfx_25.wav",
+      "bytes": 5638
+    },
+    "26": {
+      "file": "sfx_26.wav",
+      "bytes": 8130
+    },
+    "27": {
+      "file": "sfx_27.wav",
+      "bytes": 3202
+    },
+    "28": {
+      "file": "sfx_28.wav",
+      "bytes": 4078
+    },
+    "29": {
+      "empty": true,
+      "bytes": 0
+    },
+    "30": {
+      "file": "sfx_30.wav",
+      "bytes": 5186
+    }
+  }
+}

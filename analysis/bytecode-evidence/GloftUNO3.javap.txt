@@ -1,0 +1,133 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/uno-friends/analysis/recovered/GloftUNO3.class
+  Last modified Nov 24, 2026; size 788 bytes
+  SHA-256 checksum 64ab66070289ad0f1439a1789e60b56b8e19bb555feeed284add6511c96af73d
+public final class GloftUNO3 extends javax.microedition.midlet.MIDlet
+  minor version: 3
+  major version: 45
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #1                          // GloftUNO3
+  super_class: #5                         // javax/microedition/midlet/MIDlet
+  interfaces: 0, fields: 2, methods: 4, attributes: 0
+Constant pool:
+   #1 = Class              #35            // GloftUNO3
+   #2 = Class              #39            // a
+   #3 = Class              #44            // j
+   #4 = Class              #45            // javax/microedition/lcdui/Display
+   #5 = Class              #46            // javax/microedition/midlet/MIDlet
+   #6 = Fieldref           #1.#20         // GloftUNO3.a:LGloftUNO3;
+   #7 = Fieldref           #1.#21         // GloftUNO3.a:La;
+   #8 = Fieldref           #3.#22         // j.a:Ljavax/microedition/lcdui/Display;
+   #9 = Methodref          #2.#18         // a."<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+  #10 = Methodref          #2.#19         // a.a:()V
+  #11 = Methodref          #2.#23         // a.b:()V
+  #12 = Methodref          #3.#25         // j.i:()V
+  #13 = Methodref          #3.#26         // j.j:()V
+  #14 = Methodref          #4.#24         // javax/microedition/lcdui/Display.getDisplay:(Ljavax/microedition/midlet/MIDlet;)Ljavax/microedition/lcdui/Display;
+  #15 = Methodref          #4.#27         // javax/microedition/lcdui/Display.setCurrent:(Ljavax/microedition/lcdui/Displayable;)V
+  #16 = Methodref          #5.#17         // javax/microedition/midlet/MIDlet."<init>":()V
+  #17 = NameAndType        #33:#28        // "<init>":()V
+  #18 = NameAndType        #33:#29        // "<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+  #19 = NameAndType        #39:#28        // a:()V
+  #20 = NameAndType        #39:#36        // a:LGloftUNO3;
+  #21 = NameAndType        #39:#37        // a:La;
+  #22 = NameAndType        #39:#38        // a:Ljavax/microedition/lcdui/Display;
+  #23 = NameAndType        #40:#28        // b:()V
+  #24 = NameAndType        #42:#31        // getDisplay:(Ljavax/microedition/midlet/MIDlet;)Ljavax/microedition/lcdui/Display;
+  #25 = NameAndType        #43:#28        // i:()V
+  #26 = NameAndType        #44:#28        // j:()V
+  #27 = NameAndType        #48:#30        // setCurrent:(Ljavax/microedition/lcdui/Displayable;)V
+  #28 = Utf8               ()V
+  #29 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)V
+  #30 = Utf8               (Ljavax/microedition/lcdui/Displayable;)V
+  #31 = Utf8               (Ljavax/microedition/midlet/MIDlet;)Ljavax/microedition/lcdui/Display;
+  #32 = Utf8               (Z)V
+  #33 = Utf8               <init>
+  #34 = Utf8               Code
+  #35 = Utf8               GloftUNO3
+  #36 = Utf8               LGloftUNO3;
+  #37 = Utf8               La;
+  #38 = Utf8               Ljavax/microedition/lcdui/Display;
+  #39 = Utf8               a
+  #40 = Utf8               b
+  #41 = Utf8               destroyApp
+  #42 = Utf8               getDisplay
+  #43 = Utf8               i
+  #44 = Utf8               j
+  #45 = Utf8               javax/microedition/lcdui/Display
+  #46 = Utf8               javax/microedition/midlet/MIDlet
+  #47 = Utf8               pauseApp
+  #48 = Utf8               setCurrent
+  #49 = Utf8               startApp
+  #50 = Utf8               StackMap
+{
+  private static a a;
+    descriptor: La;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  public static GloftUNO3 a;
+    descriptor: LGloftUNO3;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public GloftUNO3();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #16                 // Method javax/microedition/midlet/MIDlet."<init>":()V
+         4: aload_0
+         5: putstatic     #6                  // Field a:LGloftUNO3;
+         8: return
+
+  public final void startApp();
+    descriptor: ()V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=4, locals=1, args_size=1
+         0: getstatic     #7                  // Field a:La;
+         3: ifnonnull     36
+         6: new           #2                  // class a
+         9: dup
+        10: aload_0
+        11: aconst_null
+        12: invokespecial #9                  // Method a."<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+        15: dup
+        16: putstatic     #7                  // Field a:La;
+        19: invokevirtual #12                 // Method j.i:()V
+        22: aload_0
+        23: invokestatic  #14                 // Method javax/microedition/lcdui/Display.getDisplay:(Ljavax/microedition/midlet/MIDlet;)Ljavax/microedition/lcdui/Display;
+        26: dup
+        27: putstatic     #8                  // Field j.a:Ljavax/microedition/lcdui/Display;
+        30: getstatic     #7                  // Field a:La;
+        33: invokevirtual #15                 // Method javax/microedition/lcdui/Display.setCurrent:(Ljavax/microedition/lcdui/Displayable;)V
+        36: getstatic     #7                  // Field a:La;
+        39: invokevirtual #11                 // Method a.b:()V
+        42: return
+      StackMap: number_of_entries = 1
+        frame_type = 255 offset = 36
+          locals = [ class GloftUNO3 ]
+          stack = []
+
+  public final void pauseApp();
+    descriptor: ()V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #7                  // Field a:La;
+         3: invokevirtual #10                 // Method a.a:()V
+         6: return
+
+  public final void destroyApp(boolean);
+    descriptor: (Z)V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=2, args_size=2
+         0: getstatic     #7                  // Field a:La;
+         3: ifnull        9
+         6: invokestatic  #13                 // Method j.j:()V
+         9: return
+      StackMap: number_of_entries = 1
+        frame_type = 255 offset = 9
+          locals = [ class GloftUNO3, int ]
+          stack = []
+}

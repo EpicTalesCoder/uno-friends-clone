@@ -1,0 +1,43 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/uno-friends/analysis/recovered/f.class
+  Last modified Nov 24, 2026; size 162 bytes
+  SHA-256 checksum 6aa72772d2379dc0bbfe5c4f2970f6219da886678903107bc0124227cbcbc1f4
+interface f
+  minor version: 3
+  major version: 45
+  flags: (0x0600) ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #2                          // f
+  super_class: #3                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 1, attributes: 0
+Constant pool:
+   #1 = Class              #12            // c
+   #2 = Class              #13            // f
+   #3 = Class              #16            // java/lang/Object
+   #4 = Fieldref           #1.#6          // c.f_:I
+   #5 = Fieldref           #2.#7          // f.g_:I
+   #6 = NameAndType        #14:#11        // f_:I
+   #7 = NameAndType        #15:#11        // g_:I
+   #8 = Utf8               ()V
+   #9 = Utf8               <clinit>
+  #10 = Utf8               Code
+  #11 = Utf8               I
+  #12 = Utf8               c
+  #13 = Utf8               f
+  #14 = Utf8               f_
+  #15 = Utf8               g_
+  #16 = Utf8               java/lang/Object
+{
+  public static final int g_;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #4                  // Field c.f_:I
+         3: bipush        30
+         5: isub
+         6: putstatic     #5                  // Field g_:I
+         9: return
+}

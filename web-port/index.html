@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>UNO &amp; Friends (640×360 J2ME Port)</title>
+  <link rel="icon" type="image/png" href="./assets/icon.png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="game-shell">
+    <div id="stage-wrap">
+      <div id="game">
+        <canvas id="uno-canvas" width="640" height="360" tabindex="0"></canvas>
+      </div>
+
+      <!-- Compact floating chat toast & collapsible in-game chat drawer -->
+      <div id="chat-toast" class="chat-toast hidden" aria-live="polite"></div>
+      <div id="chat-drawer" class="chat-drawer hidden" role="region" aria-label="In-game chat">
+        <div class="chat-drawer-hdr">
+          <span id="chat-drawer-title">Room Chat</span>
+          <span id="chat-net-pill" class="net-pill">Local</span>
+          <button type="button" id="btn-close-chat" class="modal-close">✕</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div id="chat-quick-bar" class="chat-quick-bar"></div>
+        <form id="chat-form" class="chat-form">
+          <input type="text" id="chat-input" maxlength="80" autocomplete="off" placeholder="Type message..." />
+          <button type="submit" id="btn-chat-send" class="btn-primary btn-small">Send</button>
+        </form>
+      </div>
+
+      <div id="dpad-overlay" class="dpad-overlay hidden" aria-hidden="true">
+        <div class="dpad-pad">
+          <button type="button" data-key="ArrowUp">▲</button>
+          <div class="dpad-mid">
+            <button type="button" data-key="ArrowLeft">◀</button>
+            <button type="button" data-key="Enter">OK</button>
+            <button type="button" data-key="ArrowRight">▶</button>
+          </div>
+          <button type="button" data-key="ArrowDown">▼</button>
+        </div>
+        <div class="dpad-actions">
+          <button type="button" data-key="u">UNO!</button>
+          <button type="button" data-key=" ">Draw</button>
+          <button type="button" data-key="Escape">Pause</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-toolbar" id="toolbar">
+      <button type="button" id="btn-lang" class="tb-btn" title="Switch Language">EN</button>
+      <button type="button" id="btn-audio" class="tb-btn" title="Toggle Sound">🔊</button>
+      <button type="button" id="btn-mp-lobby" class="tb-btn tb-primary" title="Multiplayer 2-4P">🌐 2-4P</button>
+      <button type="button" id="btn-chat" class="tb-btn" title="In-Game Chat">💬 <span id="chat-unread-badge" class="chat-badge hidden">0</span></button>
+      <button type="button" id="btn-keypad" class="tb-btn" title="Touch Controls">🎮</button>
+      <button type="button" id="btn-guide" class="tb-btn" title="Guide">?</button>
+    </div>
+  </div>
+
+  <!-- Bilingual Guide Dialog -->
+  <div id="guide-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-hdr">
+        <h2 id="guide-title">UNO &amp; Friends Guide</h2>
+        <button type="button" id="btn-close-guide" class="modal-close">✕</button>
+      </div>
+      <p id="guide-body" class="modal-body-text"></p>
+      <div class="modal-actions">
+        <button type="button" id="btn-reset-save" class="btn-danger">Reset Save</button>
+        <button type="button" id="btn-ok-guide" class="btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mandatory 2-4P Multiplayer Lobby Dialog -->
+  <div id="mp-lobby" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card mp-card">
+      <div class="modal-hdr">
+        <h2 id="mp-title">UNO &amp; Friends - Live Multiplayer (2-4P)</h2>
+        <button type="button" id="btn-close-mp" class="modal-close">✕</button>
+      </div>
+
+      <div class="mp-row">
+        <label id="mp-name-lbl" for="mp-player-name">Player Name</label>
+        <input type="text" id="mp-player-name" maxlength="14" value="Player" />
+      </div>
+
+      <div id="mp-disconnected-panel">
+        <div class="mp-btn-group">
+          <button type="button" id="btn-mp-host" class="btn-primary">Host Room</button>
+          <span class="mp-sep">or</span>
+          <input type="text" id="mp-room-input" maxlength="8" placeholder="UF1234" />
+          <button type="button" id="btn-mp-join" class="btn-secondary">Join Room</button>
+        </div>
+      </div>
+
+      <div id="mp-connected-panel" class="hidden">
+        <div class="mp-room-bar">
+          <div class="mp-room-meta">
+            <span>Room: <strong id="mp-room-code-display">UF0000</strong></span>
+            <span id="mp-transport-badge" class="net-pill">4G / WiFi Online</span>
+          </div>
+          <div class="mp-bar-actions">
+            <button type="button" id="btn-mp-copy" class="btn-small">Copy Invite Link</button>
+            <button type="button" id="btn-mp-tab2" class="btn-small">Open 2nd Tab</button>
+            <button type="button" id="btn-mp-leave" class="btn-danger btn-small">Leave Room</button>
+          </div>
+        </div>
+
+        <div id="mp-seats-list" class="mp-seats-grid"></div>
+
+        <div id="mp-host-settings" class="mp-settings">
+          <label><input type="checkbox" id="mp-chk-bots" checked /> <span id="mp-lbl-bots">Fill empty seats with AI bots</span></label>
+          <label><input type="checkbox" id="mp-chk-stack" checked /> <span id="mp-lbl-stack">Stack +2/+4</span></label>
+          <label><input type="checkbox" id="mp-chk-70" /> <span id="mp-lbl-70">7-0 Swap</span></label>
+          <label><input type="checkbox" id="mp-chk-powers" checked /> <span id="mp-lbl-powers">Special Powers</span></label>
+        </div>
+
+        <div class="mp-lobby-chat">
+          <div id="mp-lobby-chat-list" class="mp-lobby-chat-list"></div>
+          <form id="mp-lobby-chat-form" class="chat-form">
+            <input type="text" id="mp-lobby-chat-input" maxlength="80" autocomplete="off" placeholder="Type message..." />
+            <button type="submit" id="btn-mp-lobby-chat-send" class="btn-secondary btn-small">Send</button>
+          </form>
+        </div>
+
+        <div class="mp-footer">
+          <span id="mp-status-text" class="mp-status"></span>
+          <button type="button" id="btn-mp-ready" class="btn-secondary hidden">Ready</button>
+          <button type="button" id="btn-mp-start" class="btn-primary hidden">Start MP Match</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

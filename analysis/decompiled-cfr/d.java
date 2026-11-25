@@ -1,0 +1,16 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+interface d {
+    public static final int by = c.bA - 79;
+    public static final int[][] c;
+    public static final int bz;
+
+    static {
+        int[][] nArrayArray = new int[][]{{356, 78, 84, 80, 398, 118, 0}, {458, 105, 94, 88, 492, 157, 1}, {478, 212, 90, 80, 520, 250, 2}, {408, 315, 106, 85, 456, 348, 3}, {300, 300, 96, 86, 342, 347, 4}, {234, 210, 84, 84, 276, 253, 5}, {260, 118, 88, 74, 305, 156, 6}};
+        c = new int[][]{{597, 434}, {48, 406}, {220, 76}, {746, 84}};
+        int[][] nArrayArray2 = new int[][]{{626, 431}, {123, 370}, {190, 139}, {657, 150}};
+        bz = g.a;
+    }
+}
+

@@ -1,0 +1,533 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/uno-friends/analysis/recovered/h.class
+  Last modified Nov 24, 2026; size 1523 bytes
+  SHA-256 checksum e955946adb5b749fdb1c86c1c2ba73c99a158715bcdc30474393ed25ea13accd
+public final class h
+  minor version: 3
+  major version: 45
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #4                          // h
+  super_class: #5                         // java/lang/Object
+  interfaces: 0, fields: 7, methods: 4, attributes: 0
+Constant pool:
+   #1 = String             #35            //
+   #2 = String             #60            // leaderboard
+   #3 = Class              #50            // "[Ljava/lang/Object;"
+   #4 = Class              #56            // h
+   #5 = Class              #57            // java/lang/Object
+   #6 = Class              #58            // java/lang/String
+   #7 = Class              #59            // java/lang/StringBuffer
+   #8 = Fieldref           #4.#24         // h.a:I
+   #9 = Fieldref           #4.#25         // h.a:Ljava/lang/String;
+  #10 = Fieldref           #4.#26         // h.a:[C
+  #11 = Fieldref           #4.#27         // h.a:[I
+  #12 = Fieldref           #4.#28         // h.a:[[Ljava/lang/Object;
+  #13 = Fieldref           #4.#31         // h.b:I
+  #14 = Fieldref           #4.#32         // h.b:[I
+  #15 = Methodref          #4.#23         // h.a:(I[Ljava/lang/Object;)V
+  #16 = Methodref          #5.#22         // java/lang/Object."<init>":()V
+  #17 = Methodref          #6.#33         // java/lang/String.equals:(Ljava/lang/Object;)Z
+  #18 = Methodref          #7.#22         // java/lang/StringBuffer."<init>":()V
+  #19 = Methodref          #7.#29         // java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #20 = Methodref          #7.#30         // java/lang/StringBuffer.append:(Z)Ljava/lang/StringBuffer;
+  #21 = Methodref          #7.#34         // java/lang/StringBuffer.toString:()Ljava/lang/String;
+  #22 = NameAndType        #44:#37        // "<init>":()V
+  #23 = NameAndType        #52:#38        // a:(I[Ljava/lang/Object;)V
+  #24 = NameAndType        #52:#46        // a:I
+  #25 = NameAndType        #52:#47        // a:Ljava/lang/String;
+  #26 = NameAndType        #52:#48        // a:[C
+  #27 = NameAndType        #52:#49        // a:[I
+  #28 = NameAndType        #52:#51        // a:[[Ljava/lang/Object;
+  #29 = NameAndType        #53:#40        // append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #30 = NameAndType        #53:#42        // append:(Z)Ljava/lang/StringBuffer;
+  #31 = NameAndType        #54:#46        // b:I
+  #32 = NameAndType        #54:#49        // b:[I
+  #33 = NameAndType        #55:#39        // equals:(Ljava/lang/Object;)Z
+  #34 = NameAndType        #61:#36        // toString:()Ljava/lang/String;
+  #35 = Utf8
+  #36 = Utf8               ()Ljava/lang/String;
+  #37 = Utf8               ()V
+  #38 = Utf8               (I[Ljava/lang/Object;)V
+  #39 = Utf8               (Ljava/lang/Object;)Z
+  #40 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #41 = Utf8               (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
+  #42 = Utf8               (Z)Ljava/lang/StringBuffer;
+  #43 = Utf8               <clinit>
+  #44 = Utf8               <init>
+  #45 = Utf8               Code
+  #46 = Utf8               I
+  #47 = Utf8               Ljava/lang/String;
+  #48 = Utf8               [C
+  #49 = Utf8               [I
+  #50 = Utf8               [Ljava/lang/Object;
+  #51 = Utf8               [[Ljava/lang/Object;
+  #52 = Utf8               a
+  #53 = Utf8               append
+  #54 = Utf8               b
+  #55 = Utf8               equals
+  #56 = Utf8               h
+  #57 = Utf8               java/lang/Object
+  #58 = Utf8               java/lang/String
+  #59 = Utf8               java/lang/StringBuffer
+  #60 = Utf8               leaderboard
+  #61 = Utf8               toString
+  #62 = Utf8               StackMap
+{
+  private static java.lang.String a;
+    descriptor: Ljava/lang/String;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  private static int a;
+    descriptor: I
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  private static int b;
+    descriptor: I
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  private static int[] a;
+    descriptor: [I
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  private static java.lang.Object[][] a;
+    descriptor: [[Ljava/lang/Object;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  private static final char[] a;
+    descriptor: [C
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+
+  private static int[] b;
+    descriptor: [I
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  public h();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #16                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public static void a(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=6, args_size=5
+         0: ldc           #2                  // String leaderboard
+         2: dup
+         3: astore        4
+         5: getstatic     #9                  // Field a:Ljava/lang/String;
+         8: invokevirtual #17                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        11: ifne          39
+        14: iconst_1
+        15: anewarray     #6                  // class java/lang/String
+        18: dup
+        19: iconst_0
+        20: aload         4
+        22: aastore
+        23: astore        5
+        25: iconst_1
+        26: aload         5
+        28: invokestatic  #15                 // Method a:(I[Ljava/lang/Object;)V
+        31: aload         4
+        33: putstatic     #9                  // Field a:Ljava/lang/String;
+        36: goto          44
+        39: iconst_1
+        40: aconst_null
+        41: invokestatic  #15                 // Method a:(I[Ljava/lang/Object;)V
+        44: iconst_5
+        45: anewarray     #6                  // class java/lang/String
+        48: dup
+        49: iconst_0
+        50: aload_0
+        51: aastore
+        52: dup
+        53: iconst_1
+        54: aload_1
+        55: aastore
+        56: dup
+        57: iconst_2
+        58: aload_2
+        59: aastore
+        60: dup
+        61: iconst_3
+        62: new           #7                  // class java/lang/StringBuffer
+        65: dup
+        66: invokespecial #18                 // Method java/lang/StringBuffer."<init>":()V
+        69: ldc           #1                  // String
+        71: invokevirtual #19                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        74: iload_3
+        75: invokevirtual #20                 // Method java/lang/StringBuffer.append:(Z)Ljava/lang/StringBuffer;
+        78: invokevirtual #21                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+        81: aastore
+        82: dup
+        83: iconst_4
+        84: aconst_null
+        85: aastore
+        86: astore_0
+        87: bipush        28
+        89: aload_0
+        90: invokestatic  #15                 // Method a:(I[Ljava/lang/Object;)V
+        93: return
+      StackMap: number_of_entries = 2
+        frame_type = 255 offset = 39
+          locals = [ class java/lang/String, class java/lang/String, class java/lang/String, int, class java/lang/String ]
+          stack = []
+        frame_type = 255 offset = 44
+          locals = [ class java/lang/String, class java/lang/String, class java/lang/String, int, class java/lang/String ]
+          stack = []
+
+  private static void a(int, java.lang.Object[]);
+    descriptor: (I[Ljava/lang/Object;)V
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: getstatic     #11                 // Field a:[I
+         3: getstatic     #13                 // Field b:I
+         6: iload_0
+         7: iastore
+         8: getstatic     #12                 // Field a:[[Ljava/lang/Object;
+        11: getstatic     #13                 // Field b:I
+        14: dup
+        15: iconst_1
+        16: iadd
+        17: putstatic     #13                 // Field b:I
+        20: aload_1
+        21: aastore
+        22: getstatic     #8                  // Field a:I
+        25: iconst_m1
+        26: if_icmpne     37
+        29: getstatic     #11                 // Field a:[I
+        32: iconst_0
+        33: iaload
+        34: putstatic     #8                  // Field a:I
+        37: return
+      StackMap: number_of_entries = 1
+        frame_type = 255 offset = 37
+          locals = [ int, class "[Ljava/lang/Object;" ]
+          stack = []
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=0
+         0: iconst_m1
+         1: putstatic     #8                  // Field a:I
+         4: iconst_0
+         5: putstatic     #13                 // Field b:I
+         8: bipush        20
+        10: newarray       int
+        12: putstatic     #11                 // Field a:[I
+        15: bipush        20
+        17: anewarray     #3                  // class "[Ljava/lang/Object;"
+        20: putstatic     #12                 // Field a:[[Ljava/lang/Object;
+        23: iconst_1
+        24: newarray       char
+        26: iconst_0
+        27: bipush        32
+        29: castore
+        30: bipush        64
+        32: newarray       char
+        34: dup
+        35: iconst_0
+        36: bipush        65
+        38: castore
+        39: dup
+        40: iconst_1
+        41: bipush        66
+        43: castore
+        44: dup
+        45: iconst_2
+        46: bipush        67
+        48: castore
+        49: dup
+        50: iconst_3
+        51: bipush        68
+        53: castore
+        54: dup
+        55: iconst_4
+        56: bipush        69
+        58: castore
+        59: dup
+        60: iconst_5
+        61: bipush        70
+        63: castore
+        64: dup
+        65: bipush        6
+        67: bipush        71
+        69: castore
+        70: dup
+        71: bipush        7
+        73: bipush        72
+        75: castore
+        76: dup
+        77: bipush        8
+        79: bipush        73
+        81: castore
+        82: dup
+        83: bipush        9
+        85: bipush        74
+        87: castore
+        88: dup
+        89: bipush        10
+        91: bipush        75
+        93: castore
+        94: dup
+        95: bipush        11
+        97: bipush        76
+        99: castore
+       100: dup
+       101: bipush        12
+       103: bipush        77
+       105: castore
+       106: dup
+       107: bipush        13
+       109: bipush        78
+       111: castore
+       112: dup
+       113: bipush        14
+       115: bipush        79
+       117: castore
+       118: dup
+       119: bipush        15
+       121: bipush        80
+       123: castore
+       124: dup
+       125: bipush        16
+       127: bipush        81
+       129: castore
+       130: dup
+       131: bipush        17
+       133: bipush        82
+       135: castore
+       136: dup
+       137: bipush        18
+       139: bipush        83
+       141: castore
+       142: dup
+       143: bipush        19
+       145: bipush        84
+       147: castore
+       148: dup
+       149: bipush        20
+       151: bipush        85
+       153: castore
+       154: dup
+       155: bipush        21
+       157: bipush        86
+       159: castore
+       160: dup
+       161: bipush        22
+       163: bipush        87
+       165: castore
+       166: dup
+       167: bipush        23
+       169: bipush        88
+       171: castore
+       172: dup
+       173: bipush        24
+       175: bipush        89
+       177: castore
+       178: dup
+       179: bipush        25
+       181: bipush        90
+       183: castore
+       184: dup
+       185: bipush        26
+       187: bipush        97
+       189: castore
+       190: dup
+       191: bipush        27
+       193: bipush        98
+       195: castore
+       196: dup
+       197: bipush        28
+       199: bipush        99
+       201: castore
+       202: dup
+       203: bipush        29
+       205: bipush        100
+       207: castore
+       208: dup
+       209: bipush        30
+       211: bipush        101
+       213: castore
+       214: dup
+       215: bipush        31
+       217: bipush        102
+       219: castore
+       220: dup
+       221: bipush        32
+       223: bipush        103
+       225: castore
+       226: dup
+       227: bipush        33
+       229: bipush        104
+       231: castore
+       232: dup
+       233: bipush        34
+       235: bipush        105
+       237: castore
+       238: dup
+       239: bipush        35
+       241: bipush        106
+       243: castore
+       244: dup
+       245: bipush        36
+       247: bipush        107
+       249: castore
+       250: dup
+       251: bipush        37
+       253: bipush        108
+       255: castore
+       256: dup
+       257: bipush        38
+       259: bipush        109
+       261: castore
+       262: dup
+       263: bipush        39
+       265: bipush        110
+       267: castore
+       268: dup
+       269: bipush        40
+       271: bipush        111
+       273: castore
+       274: dup
+       275: bipush        41
+       277: bipush        112
+       279: castore
+       280: dup
+       281: bipush        42
+       283: bipush        113
+       285: castore
+       286: dup
+       287: bipush        43
+       289: bipush        114
+       291: castore
+       292: dup
+       293: bipush        44
+       295: bipush        115
+       297: castore
+       298: dup
+       299: bipush        45
+       301: bipush        116
+       303: castore
+       304: dup
+       305: bipush        46
+       307: bipush        117
+       309: castore
+       310: dup
+       311: bipush        47
+       313: bipush        118
+       315: castore
+       316: dup
+       317: bipush        48
+       319: bipush        119
+       321: castore
+       322: dup
+       323: bipush        49
+       325: bipush        120
+       327: castore
+       328: dup
+       329: bipush        50
+       331: bipush        121
+       333: castore
+       334: dup
+       335: bipush        51
+       337: bipush        122
+       339: castore
+       340: dup
+       341: bipush        52
+       343: bipush        48
+       345: castore
+       346: dup
+       347: bipush        53
+       349: bipush        49
+       351: castore
+       352: dup
+       353: bipush        54
+       355: bipush        50
+       357: castore
+       358: dup
+       359: bipush        55
+       361: bipush        51
+       363: castore
+       364: dup
+       365: bipush        56
+       367: bipush        52
+       369: castore
+       370: dup
+       371: bipush        57
+       373: bipush        53
+       375: castore
+       376: dup
+       377: bipush        58
+       379: bipush        54
+       381: castore
+       382: dup
+       383: bipush        59
+       385: bipush        55
+       387: castore
+       388: dup
+       389: bipush        60
+       391: bipush        56
+       393: castore
+       394: dup
+       395: bipush        61
+       397: bipush        57
+       399: castore
+       400: dup
+       401: bipush        62
+       403: bipush        43
+       405: castore
+       406: dup
+       407: bipush        63
+       409: bipush        47
+       411: castore
+       412: putstatic     #10                 // Field a:[C
+       415: sipush        128
+       418: newarray       int
+       420: putstatic     #14                 // Field b:[I
+       423: iconst_0
+       424: istore_0
+       425: iload_0
+       426: getstatic     #14                 // Field b:[I
+       429: arraylength
+       430: if_icmpge     445
+       433: getstatic     #14                 // Field b:[I
+       436: iload_0
+       437: iconst_m1
+       438: iastore
+       439: iinc          0, 1
+       442: goto          425
+       445: iconst_0
+       446: istore_0
+       447: iload_0
+       448: getstatic     #10                 // Field a:[C
+       451: arraylength
+       452: if_icmpge     471
+       455: getstatic     #14                 // Field b:[I
+       458: getstatic     #10                 // Field a:[C
+       461: iload_0
+       462: caload
+       463: iload_0
+       464: iastore
+       465: iinc          0, 1
+       468: goto          447
+       471: return
+      StackMap: number_of_entries = 4
+        frame_type = 255 offset = 425
+          locals = [ int ]
+          stack = []
+        frame_type = 255 offset = 445
+          locals = [ int ]
+          stack = []
+        frame_type = 255 offset = 447
+          locals = [ int ]
+          stack = []
+        frame_type = 255 offset = 471
+          locals = [ int ]
+          stack = []
+}

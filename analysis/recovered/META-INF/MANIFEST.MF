@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+MIDlet-Info-URL: https://waptai.com
+MIDlet-Vendor: Waptai.Com
+MIDlet-Version: 1.0.7
+MIDlet-1: UNO & Friends, /icon.png, GloftUNO3
+MIDlet-2: WapTai.COM, WapTai/icon2.png, WapTai.COM.WapTai
+MicroEdition-Configuration: CLDC-1.1
+Created-By: 1.6.0_18 (Sun Microsystems Inc.)
+MIDlet-Icon: /icon.png
+MIDlet-Name: UNO & Friends
+MIDlet-Permissions: javax.microedition.io.Connector.http
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Delete-Confirm: Cam on ban da su dung Waptai.Com

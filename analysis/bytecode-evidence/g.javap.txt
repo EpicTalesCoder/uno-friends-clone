@@ -1,0 +1,790 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/uno-friends/analysis/recovered/g.class
+  Last modified Nov 24, 2026; size 1180 bytes
+  SHA-256 checksum e7db1e9baf99b4eaa3ccceb14c3f12755c22803bdb32c2145ba0249d083d6a3f
+final class g
+  minor version: 3
+  major version: 45
+  flags: (0x0030) ACC_FINAL, ACC_SUPER
+  this_class: #3                          // g
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 2, attributes: 0
+Constant pool:
+   #1 = Class              #20            // "[I"
+   #2 = Class              #23            // c
+   #3 = Class              #25            // g
+   #4 = Class              #26            // java/lang/Object
+   #5 = Fieldref           #2.#14         // c.e_:I
+   #6 = Fieldref           #3.#11         // g.a:I
+   #7 = Fieldref           #3.#12         // g.a:[I
+   #8 = Fieldref           #3.#13         // g.a:[[I
+   #9 = Methodref          #4.#10         // java/lang/Object."<init>":()V
+  #10 = NameAndType        #17:#15        // "<init>":()V
+  #11 = NameAndType        #22:#19        // a:I
+  #12 = NameAndType        #22:#20        // a:[I
+  #13 = NameAndType        #22:#21        // a:[[I
+  #14 = NameAndType        #24:#19        // e_:I
+  #15 = Utf8               ()V
+  #16 = Utf8               <clinit>
+  #17 = Utf8               <init>
+  #18 = Utf8               Code
+  #19 = Utf8               I
+  #20 = Utf8               [I
+  #21 = Utf8               [[I
+  #22 = Utf8               a
+  #23 = Utf8               c
+  #24 = Utf8               e_
+  #25 = Utf8               g
+  #26 = Utf8               java/lang/Object
+{
+  public static final int a;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  static int[][] a;
+    descriptor: [[I
+    flags: (0x0008) ACC_STATIC
+
+  public static final int[] a;
+    descriptor: [I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  g();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=7, locals=0, args_size=0
+         0: getstatic     #5                  // Field c.e_:I
+         3: bipush        20
+         5: isub
+         6: putstatic     #6                  // Field a:I
+         9: bipush        34
+        11: anewarray     #1                  // class "[I"
+        14: dup
+        15: iconst_0
+        16: iconst_4
+        17: newarray       int
+        19: dup
+        20: iconst_0
+        21: sipush        643
+        24: iastore
+        25: dup
+        26: iconst_1
+        27: bipush        13
+        29: iastore
+        30: dup
+        31: iconst_2
+        32: iconst_m1
+        33: iastore
+        34: dup
+        35: iconst_3
+        36: iconst_m1
+        37: iastore
+        38: aastore
+        39: dup
+        40: iconst_1
+        41: iconst_4
+        42: newarray       int
+        44: dup
+        45: iconst_0
+        46: sipush        643
+        49: iastore
+        50: dup
+        51: iconst_1
+        52: bipush        14
+        54: iastore
+        55: dup
+        56: iconst_2
+        57: iconst_m1
+        58: iastore
+        59: dup
+        60: iconst_3
+        61: iconst_m1
+        62: iastore
+        63: aastore
+        64: dup
+        65: iconst_2
+        66: iconst_4
+        67: newarray       int
+        69: dup
+        70: iconst_0
+        71: sipush        643
+        74: iastore
+        75: dup
+        76: iconst_1
+        77: bipush        15
+        79: iastore
+        80: dup
+        81: iconst_2
+        82: iconst_m1
+        83: iastore
+        84: dup
+        85: iconst_3
+        86: iconst_m1
+        87: iastore
+        88: aastore
+        89: dup
+        90: iconst_3
+        91: iconst_4
+        92: newarray       int
+        94: dup
+        95: iconst_0
+        96: sipush        643
+        99: iastore
+       100: dup
+       101: iconst_1
+       102: bipush        11
+       104: iastore
+       105: dup
+       106: iconst_2
+       107: iconst_m1
+       108: iastore
+       109: dup
+       110: iconst_3
+       111: iconst_m1
+       112: iastore
+       113: aastore
+       114: dup
+       115: iconst_4
+       116: iconst_4
+       117: newarray       int
+       119: dup
+       120: iconst_0
+       121: sipush        229
+       124: iastore
+       125: dup
+       126: iconst_1
+       127: bipush        13
+       129: iastore
+       130: dup
+       131: iconst_2
+       132: iconst_m1
+       133: iastore
+       134: dup
+       135: iconst_3
+       136: iconst_m1
+       137: iastore
+       138: aastore
+       139: dup
+       140: iconst_5
+       141: iconst_4
+       142: newarray       int
+       144: dup
+       145: iconst_0
+       146: sipush        229
+       149: iastore
+       150: dup
+       151: iconst_1
+       152: bipush        14
+       154: iastore
+       155: dup
+       156: iconst_2
+       157: iconst_m1
+       158: iastore
+       159: dup
+       160: iconst_3
+       161: iconst_m1
+       162: iastore
+       163: aastore
+       164: dup
+       165: bipush        6
+       167: iconst_4
+       168: newarray       int
+       170: dup
+       171: iconst_0
+       172: sipush        229
+       175: iastore
+       176: dup
+       177: iconst_1
+       178: bipush        15
+       180: iastore
+       181: dup
+       182: iconst_2
+       183: iconst_m1
+       184: iastore
+       185: dup
+       186: iconst_3
+       187: iconst_m1
+       188: iastore
+       189: aastore
+       190: dup
+       191: bipush        7
+       193: iconst_4
+       194: newarray       int
+       196: dup
+       197: iconst_0
+       198: sipush        229
+       201: iastore
+       202: dup
+       203: iconst_1
+       204: bipush        11
+       206: iastore
+       207: dup
+       208: iconst_2
+       209: iconst_m1
+       210: iastore
+       211: dup
+       212: iconst_3
+       213: iconst_m1
+       214: iastore
+       215: aastore
+       216: dup
+       217: bipush        8
+       219: iconst_4
+       220: newarray       int
+       222: dup
+       223: iconst_0
+       224: sipush        229
+       227: iastore
+       228: dup
+       229: iconst_1
+       230: bipush        13
+       232: iastore
+       233: dup
+       234: iconst_2
+       235: iconst_m1
+       236: iastore
+       237: dup
+       238: iconst_3
+       239: iconst_m1
+       240: iastore
+       241: aastore
+       242: dup
+       243: bipush        9
+       245: iconst_4
+       246: newarray       int
+       248: dup
+       249: iconst_0
+       250: sipush        229
+       253: iastore
+       254: dup
+       255: iconst_1
+       256: bipush        14
+       258: iastore
+       259: dup
+       260: iconst_2
+       261: iconst_m1
+       262: iastore
+       263: dup
+       264: iconst_3
+       265: iconst_m1
+       266: iastore
+       267: aastore
+       268: dup
+       269: bipush        10
+       271: iconst_4
+       272: newarray       int
+       274: dup
+       275: iconst_0
+       276: sipush        229
+       279: iastore
+       280: dup
+       281: iconst_1
+       282: bipush        15
+       284: iastore
+       285: dup
+       286: iconst_2
+       287: iconst_m1
+       288: iastore
+       289: dup
+       290: iconst_3
+       291: iconst_m1
+       292: iastore
+       293: aastore
+       294: dup
+       295: bipush        11
+       297: iconst_4
+       298: newarray       int
+       300: dup
+       301: iconst_0
+       302: sipush        229
+       305: iastore
+       306: dup
+       307: iconst_1
+       308: bipush        11
+       310: iastore
+       311: dup
+       312: iconst_2
+       313: iconst_m1
+       314: iastore
+       315: dup
+       316: iconst_3
+       317: iconst_m1
+       318: iastore
+       319: aastore
+       320: dup
+       321: bipush        12
+       323: iconst_4
+       324: newarray       int
+       326: dup
+       327: iconst_0
+       328: sipush        230
+       331: iastore
+       332: dup
+       333: iconst_1
+       334: bipush        13
+       336: iastore
+       337: dup
+       338: iconst_2
+       339: iconst_m1
+       340: iastore
+       341: dup
+       342: iconst_3
+       343: iconst_m1
+       344: iastore
+       345: aastore
+       346: dup
+       347: bipush        13
+       349: iconst_4
+       350: newarray       int
+       352: dup
+       353: iconst_0
+       354: sipush        230
+       357: iastore
+       358: dup
+       359: iconst_1
+       360: bipush        14
+       362: iastore
+       363: dup
+       364: iconst_2
+       365: iconst_m1
+       366: iastore
+       367: dup
+       368: iconst_3
+       369: iconst_m1
+       370: iastore
+       371: aastore
+       372: dup
+       373: bipush        14
+       375: iconst_4
+       376: newarray       int
+       378: dup
+       379: iconst_0
+       380: sipush        230
+       383: iastore
+       384: dup
+       385: iconst_1
+       386: bipush        15
+       388: iastore
+       389: dup
+       390: iconst_2
+       391: iconst_m1
+       392: iastore
+       393: dup
+       394: iconst_3
+       395: iconst_m1
+       396: iastore
+       397: aastore
+       398: dup
+       399: bipush        15
+       401: iconst_4
+       402: newarray       int
+       404: dup
+       405: iconst_0
+       406: sipush        230
+       409: iastore
+       410: dup
+       411: iconst_1
+       412: bipush        11
+       414: iastore
+       415: dup
+       416: iconst_2
+       417: iconst_m1
+       418: iastore
+       419: dup
+       420: iconst_3
+       421: iconst_m1
+       422: iastore
+       423: aastore
+       424: dup
+       425: bipush        16
+       427: iconst_4
+       428: newarray       int
+       430: dup
+       431: iconst_0
+       432: sipush        623
+       435: iastore
+       436: dup
+       437: iconst_1
+       438: bipush        13
+       440: iastore
+       441: dup
+       442: iconst_2
+       443: iconst_m1
+       444: iastore
+       445: dup
+       446: iconst_3
+       447: iconst_m1
+       448: iastore
+       449: aastore
+       450: dup
+       451: bipush        17
+       453: iconst_4
+       454: newarray       int
+       456: dup
+       457: iconst_0
+       458: sipush        623
+       461: iastore
+       462: dup
+       463: iconst_1
+       464: bipush        14
+       466: iastore
+       467: dup
+       468: iconst_2
+       469: iconst_m1
+       470: iastore
+       471: dup
+       472: iconst_3
+       473: iconst_m1
+       474: iastore
+       475: aastore
+       476: dup
+       477: bipush        18
+       479: iconst_4
+       480: newarray       int
+       482: dup
+       483: iconst_0
+       484: sipush        623
+       487: iastore
+       488: dup
+       489: iconst_1
+       490: bipush        15
+       492: iastore
+       493: dup
+       494: iconst_2
+       495: iconst_m1
+       496: iastore
+       497: dup
+       498: iconst_3
+       499: iconst_m1
+       500: iastore
+       501: aastore
+       502: dup
+       503: bipush        19
+       505: iconst_4
+       506: newarray       int
+       508: dup
+       509: iconst_0
+       510: sipush        623
+       513: iastore
+       514: dup
+       515: iconst_1
+       516: bipush        11
+       518: iastore
+       519: dup
+       520: iconst_2
+       521: iconst_m1
+       522: iastore
+       523: dup
+       524: iconst_3
+       525: iconst_m1
+       526: iastore
+       527: aastore
+       528: dup
+       529: bipush        20
+       531: iconst_4
+       532: newarray       int
+       534: dup
+       535: iconst_0
+       536: sipush        633
+       539: iastore
+       540: dup
+       541: iconst_1
+       542: bipush        13
+       544: iastore
+       545: dup
+       546: iconst_2
+       547: iconst_m1
+       548: iastore
+       549: dup
+       550: iconst_3
+       551: iconst_m1
+       552: iastore
+       553: aastore
+       554: dup
+       555: bipush        21
+       557: iconst_4
+       558: newarray       int
+       560: dup
+       561: iconst_0
+       562: sipush        633
+       565: iastore
+       566: dup
+       567: iconst_1
+       568: bipush        14
+       570: iastore
+       571: dup
+       572: iconst_2
+       573: iconst_m1
+       574: iastore
+       575: dup
+       576: iconst_3
+       577: iconst_m1
+       578: iastore
+       579: aastore
+       580: dup
+       581: bipush        22
+       583: iconst_4
+       584: newarray       int
+       586: dup
+       587: iconst_0
+       588: sipush        633
+       591: iastore
+       592: dup
+       593: iconst_1
+       594: bipush        15
+       596: iastore
+       597: dup
+       598: iconst_2
+       599: iconst_m1
+       600: iastore
+       601: dup
+       602: iconst_3
+       603: iconst_m1
+       604: iastore
+       605: aastore
+       606: dup
+       607: bipush        23
+       609: iconst_4
+       610: newarray       int
+       612: dup
+       613: iconst_0
+       614: sipush        633
+       617: iastore
+       618: dup
+       619: iconst_1
+       620: bipush        11
+       622: iastore
+       623: dup
+       624: iconst_2
+       625: iconst_m1
+       626: iastore
+       627: dup
+       628: iconst_3
+       629: iconst_m1
+       630: iastore
+       631: aastore
+       632: dup
+       633: bipush        24
+       635: iconst_4
+       636: newarray       int
+       638: dup
+       639: iconst_0
+       640: sipush        632
+       643: iastore
+       644: dup
+       645: iconst_1
+       646: bipush        13
+       648: iastore
+       649: dup
+       650: iconst_2
+       651: sipush        139
+       654: iastore
+       655: dup
+       656: iconst_3
+       657: bipush        13
+       659: iastore
+       660: aastore
+       661: dup
+       662: bipush        25
+       664: iconst_4
+       665: newarray       int
+       667: dup
+       668: iconst_0
+       669: sipush        632
+       672: iastore
+       673: dup
+       674: iconst_1
+       675: bipush        14
+       677: iastore
+       678: dup
+       679: iconst_2
+       680: sipush        140
+       683: iastore
+       684: dup
+       685: iconst_3
+       686: bipush        14
+       688: iastore
+       689: aastore
+       690: dup
+       691: bipush        26
+       693: iconst_4
+       694: newarray       int
+       696: dup
+       697: iconst_0
+       698: sipush        632
+       701: iastore
+       702: dup
+       703: iconst_1
+       704: bipush        15
+       706: iastore
+       707: dup
+       708: iconst_2
+       709: sipush        141
+       712: iastore
+       713: dup
+       714: iconst_3
+       715: bipush        15
+       717: iastore
+       718: aastore
+       719: dup
+       720: bipush        27
+       722: iconst_4
+       723: newarray       int
+       725: dup
+       726: iconst_0
+       727: sipush        632
+       730: iastore
+       731: dup
+       732: iconst_1
+       733: bipush        11
+       735: iastore
+       736: dup
+       737: iconst_2
+       738: sipush        142
+       741: iastore
+       742: dup
+       743: iconst_3
+       744: bipush        11
+       746: iastore
+       747: aastore
+       748: dup
+       749: bipush        28
+       751: iconst_4
+       752: newarray       int
+       754: dup
+       755: iconst_0
+       756: sipush        624
+       759: iastore
+       760: dup
+       761: iconst_1
+       762: bipush        15
+       764: iastore
+       765: dup
+       766: iconst_2
+       767: sipush        628
+       770: iastore
+       771: dup
+       772: iconst_3
+       773: bipush        15
+       775: iastore
+       776: aastore
+       777: dup
+       778: bipush        29
+       780: iconst_4
+       781: newarray       int
+       783: dup
+       784: iconst_0
+       785: sipush        624
+       788: iastore
+       789: dup
+       790: iconst_1
+       791: bipush        13
+       793: iastore
+       794: dup
+       795: iconst_2
+       796: sipush        625
+       799: iastore
+       800: dup
+       801: iconst_3
+       802: bipush        13
+       804: iastore
+       805: aastore
+       806: dup
+       807: bipush        30
+       809: iconst_4
+       810: newarray       int
+       812: dup
+       813: iconst_0
+       814: sipush        624
+       817: iastore
+       818: dup
+       819: iconst_1
+       820: bipush        15
+       822: iastore
+       823: dup
+       824: iconst_2
+       825: sipush        629
+       828: iastore
+       829: dup
+       830: iconst_3
+       831: bipush        15
+       833: iastore
+       834: aastore
+       835: dup
+       836: bipush        31
+       838: iconst_4
+       839: newarray       int
+       841: dup
+       842: iconst_0
+       843: sipush        624
+       846: iastore
+       847: dup
+       848: iconst_1
+       849: bipush        11
+       851: iastore
+       852: dup
+       853: iconst_2
+       854: sipush        631
+       857: iastore
+       858: dup
+       859: iconst_3
+       860: bipush        11
+       862: iastore
+       863: aastore
+       864: dup
+       865: bipush        32
+       867: iconst_4
+       868: newarray       int
+       870: dup
+       871: iconst_0
+       872: sipush        624
+       875: iastore
+       876: dup
+       877: iconst_1
+       878: bipush        14
+       880: iastore
+       881: dup
+       882: iconst_2
+       883: sipush        627
+       886: iastore
+       887: dup
+       888: iconst_3
+       889: bipush        14
+       891: iastore
+       892: aastore
+       893: dup
+       894: bipush        33
+       896: iconst_4
+       897: newarray       int
+       899: dup
+       900: iconst_0
+       901: sipush        306
+       904: iastore
+       905: dup
+       906: iconst_1
+       907: bipush        12
+       909: iastore
+       910: dup
+       911: iconst_2
+       912: iconst_m1
+       913: iastore
+       914: dup
+       915: iconst_3
+       916: iconst_m1
+       917: iastore
+       918: aastore
+       919: putstatic     #8                  // Field a:[[I
+       922: iconst_0
+       923: newarray       int
+       925: putstatic     #7                  // Field a:[I
+       928: return
+}

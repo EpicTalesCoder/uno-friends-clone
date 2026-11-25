@@ -1,0 +1,67 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/uno-friends/analysis/recovered/c.class
+  Last modified Nov 24, 2026; size 228 bytes
+  SHA-256 checksum a1e4a21774e9919e99468d8f59b65f62c13834c512765fa35cd066a28ebae95c
+interface c
+  minor version: 3
+  major version: 45
+  flags: (0x0600) ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #1                          // c
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 4, methods: 1, attributes: 0
+Constant pool:
+   #1 = Class              #17            // c
+   #2 = Class              #20            // java/lang/Object
+   #3 = Fieldref           #1.#7          // c.bA:I
+   #4 = Fieldref           #1.#8          // c.bB:I
+   #5 = Fieldref           #1.#9          // c.e_:I
+   #6 = Fieldref           #1.#10         // c.f_:I
+   #7 = NameAndType        #15:#14        // bA:I
+   #8 = NameAndType        #16:#14        // bB:I
+   #9 = NameAndType        #18:#14        // e_:I
+  #10 = NameAndType        #19:#14        // f_:I
+  #11 = Utf8               ()V
+  #12 = Utf8               <clinit>
+  #13 = Utf8               Code
+  #14 = Utf8               I
+  #15 = Utf8               bA
+  #16 = Utf8               bB
+  #17 = Utf8               c
+  #18 = Utf8               e_
+  #19 = Utf8               f_
+  #20 = Utf8               java/lang/Object
+{
+  public static final int e_;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final int f_;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final int bA;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static final int bB;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: sipush        640
+         3: putstatic     #5                  // Field e_:I
+         6: sipush        360
+         9: putstatic     #6                  // Field f_:I
+        12: getstatic     #5                  // Field e_:I
+        15: iconst_2
+        16: idiv
+        17: putstatic     #3                  // Field bA:I
+        20: getstatic     #6                  // Field f_:I
+        23: iconst_2
+        24: idiv
+        25: putstatic     #4                  // Field bB:I
+        28: return
+}
